@@ -1,0 +1,12 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+
+  .username {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    padding-left: 0.5rem;
+  }
+}
