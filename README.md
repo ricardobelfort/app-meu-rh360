@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
+Visit the project here [Meu RH360](https://app-meu-rh360.vercel.app/)
+
+## Code Quality
+
+[![DeepScan grade](https://deepscan.io/api/teams/20752/projects/24286/branches/745662/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=20752&pid=24286&bid=745662)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
