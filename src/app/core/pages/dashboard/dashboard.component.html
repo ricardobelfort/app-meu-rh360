@@ -1,1 +1,61 @@
-<p>dashboard works!</p>
+<div class="wrapper">
+  <aside class="sidebar">
+    <img src="../../../../assets/images/logo-white.svg" alt="" />
+
+    <ul class="sidebar-nav">
+      <h2 class="title">Empresa</h2>
+      <li class="item">
+        <a href="http://">Confi. da empresa</a>
+      </li>
+      <li class="item">
+        <a href="http://">Minha empresa</a>
+      </li>
+      <li class="item">
+        <a href="http://">Benefícios</a>
+      </li>
+      <li class="item">
+        <a href="http://">Áreas</a>
+      </li>
+      <li class="item">
+        <a href="http://">Cargos</a>
+      </li>
+      <li class="item">
+        <a href="http://">Filiais</a>
+      </li>
+    </ul>
+
+    <ul class="sidebar-nav">
+      <h2 class="title">Vagas</h2>
+      <li class="item">
+        <a href="http://">Gestão de vagas</a>
+      </li>
+    </ul>
+
+    <ul class="sidebar-nav">
+      <h2 class="title">Usuários</h2>
+      <li class="item">
+        <a href="http://">Meu perfil</a>
+      </li>
+      <li class="item">
+        <a href="http://">Todos os usuários</a>
+      </li>
+    </ul>
+  </aside>
+  <main class="content-wrapper">
+    <nav class="navbar" style="background-color: #fff">
+      <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <div class="d-flex">
+          <div class="avatar">
+            <img src="../../../../assets/images/avatar.svg" alt="" />
+            <span class="username">Henry</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

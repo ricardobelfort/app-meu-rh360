@@ -17,52 +17,69 @@
     </div>
   </aside>
   <main class="login">
-    <form class="login-form">
+    <form
+      class="login-form needs-validation"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+      novalidate
+    >
       <img class="logo" src="/assets/images/logo.svg" alt="" />
       <h1>Crie uma conta profissional</h1>
       <p>Preencha seus dados para ter acesso</p>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Nome completo</label
+        <label for="name" class="form-label"
+          >Nome completo <span class="text-danger">*</span></label
         >
         <input
-          type="email"
+          type="text"
           class="form-control"
-          id="exampleFormControlInput1"
+          id="name"
+          formControlName="name"
           placeholder="Digite seu nome completo"
+          required
         />
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+        <label for="email" class="form-label"
+          >E-mail <span class="text-danger">*</span></label
+        >
         <input
           type="email"
           class="form-control"
-          id="exampleFormControlInput1"
+          id="email"
+          formControlName="email"
           placeholder="Digite seu e-mail cadastrado"
+          required
         />
       </div>
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Senha</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="Digite uma senha forte"
-        />
-      </div>
-
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Confirmação de senha</label
+        <label for="password" class="form-label"
+          >Senha <span class="text-danger">*</span></label
         >
         <input
           type="password"
           class="form-control"
-          id="exampleFormControlInput1"
+          id="password"
+          formControlName="password"
+          placeholder="Digite uma senha forte"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="repeat-password" class="form-label"
+          >Confirmação de senha <span class="text-danger">*</span></label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="repeat-password"
+          formControlName="repeat_password"
           placeholder="Repita a senha"
+          required
         />
       </div>
 
@@ -71,16 +88,22 @@
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckChecked"
+          id="terms"
+          formControlName="terms"
+          required
         />
-        <label class="form-check-label" for="flexCheckChecked">
+        <label class="form-check-label" for="terms">
           Eu aceito os <a href="#">Termos de Uso & Privacidade</a> e o
-          <a href="#">Contrato de Serviço</a>
+          <a href="#">Contrato de Serviço</a> <span class="text-danger">*</span>
         </label>
       </div>
 
       <div class="d-grid gap-2">
-        <button class="btn btn-primary btn-lg" type="button">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="!loginForm.valid"
+        >
           Criar conta
         </button>
       </div>
