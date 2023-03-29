@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { CreateCompanyComponent } from './pages/create-company/create-company.component';
+import { ShowCompanyComponent } from './pages/show-company/show-company.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'editar-empresa',
         component: CreateCompanyComponent,
+      },
+      {
+        path: 'minha-empresa',
+        component: ShowCompanyComponent,
       },
     ],
   },

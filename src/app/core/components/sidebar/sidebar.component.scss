@@ -35,6 +35,11 @@
           background-color: var(--light);
           color: var(--dark-blue);
         }
+
+        &.active {
+          background-color: var(--light);
+          color: var(--dark-blue);
+        }
       }
     }
   }
