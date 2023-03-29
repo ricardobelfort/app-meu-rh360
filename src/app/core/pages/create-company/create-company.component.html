@@ -1,0 +1,153 @@
+<div class="container-fluid p-4">
+  <h1 class="fs-4 fw-bold mb-2">Editar empresa</h1>
+  <hr />
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="row g-3">
+      <div class="col-md-2">
+        <label for="tipo_empresa" class="form-label">Tipo de empresa</label>
+        <input
+          type="text"
+          class="form-control"
+          id="tipo_empresa"
+          value="Tecnologia"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <label for="nome_empresa" class="form-label">Nome da empresa</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome_empresa"
+        value="Meu RH 360"
+        required
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="cnpj" class="form-label">CNPJ da empresa</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cnpj"
+        value="11.394.715/0001-92"
+        required
+      />
+    </div>
+
+    <div class="col-md-1">
+      <label for="cep" class="form-label">CEP</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cep"
+        value="33333-333"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    <div class="col-md-4">
+      <label for="cep" class="form-label">Endereço</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cep"
+        value="Rua exemplo, 444"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    <div class="col-md-2">
+      <label for="bairro" class="form-label">Bairro</label>
+      <input
+        type="text"
+        class="form-control"
+        id="bairro"
+        value="Belzonte"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <div class="col-md-2">
+      <label for="complemento" class="form-label">Complemento</label>
+      <input
+        type="text"
+        class="form-control"
+        id="complemento"
+        value="Loja 35"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <div class="col-md-1">
+      <label for="uf" class="form-label">UF</label>
+      <select class="form-select" id="uf" required>
+        <option selected disabled value="">MG</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">Please select a valid state.</div>
+    </div>
+    <div class="col-md-2">
+      <label for="cidade" class="form-label">Cidade</label>
+      <select class="form-select" id="cidade" required>
+        <option selected disabled value="">Belo Horizonte</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">Please select a valid state.</div>
+    </div>
+
+    <div class="col-md-3">
+      <label for="celular" class="form-label">Celular</label>
+      <input
+        type="text"
+        class="form-control"
+        id="celular"
+        value="(33) 99876-5432"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    <div class="col-md-3">
+      <label for="nome_admin" class="form-label">Nome do administrador</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome_admin"
+        value="Carlos Castro Caio Cesar Couto"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    <div class="col-md-3">
+      <label for="cpf" class="form-label">CPF</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cpf"
+        value="111.222.111-33"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    <div class="col-md-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        value="carlos.castro@gmail.com"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-outline-secondary me-md-2" type="button">
+        Cancelar
+      </button>
+      <button class="btn btn-primary" type="button">Salvar Dados</button>
+    </div>
+  </form>
+</div>

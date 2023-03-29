@@ -7,6 +7,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { CreateCompanyComponent } from './pages/create-company/create-company.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     NavbarComponent,
     WelcomeComponent,
     BreadcrumbComponent,
+    CreateCompanyComponent,
   ],
   imports: [CommonModule, CoreRoutingModule],
   exports: [SidebarComponent, NavbarComponent],
